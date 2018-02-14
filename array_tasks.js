@@ -38,9 +38,17 @@ const arrayTasks = {
 
 	},
 
-	// sumOfAllEvenNumbersSquared: function (arr) {
+  sumOfAllEvenNumbersSquared: function (arr) {
+    const evenNumbers = []
+    arr.forEach(function(evens){
+      if (evens % 2 === 0){
+        evenNumbers.push(evens)
+      }
+    })
+    let sumOfEvens = this.square(evenNumbers);
+    return this.sum(sumOfEvens);
+  },
 
-	// }
 
 	// ----------- EXTENSION ------------
 
@@ -52,6 +60,7 @@ const arrayTasks = {
   //     }
   //       return clonedNumbers;
   //   });
+  // }
 }
 
 module.exports = arrayTasks
