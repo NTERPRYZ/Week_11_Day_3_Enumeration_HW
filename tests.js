@@ -15,15 +15,15 @@ describe('Array tasks', function () {
 		assert.deepStrictEqual(arrayTasks.insertAt(arr, 3, 2), [1, 2, 3, 4])
 	})
   //
-	// xit('should square all values in an array, returning a new array', function () {
-	// 	const arr = [1, 2, 3, 4, 5]
-	// 	assert.deepStrictEqual(arrayTasks.square(arr), [1, 4, 9, 16, 25])
-	// })
+	it('should square all values in an array, returning a new array', function () {
+		const arr = [1, 2, 3, 4, 5]
+		assert.deepStrictEqual(arrayTasks.square(arr), [1, 4, 9, 16, 25])
+	})
   //
-	// xit('should calculate the sum of all values in an array', function () {
-	// 	const arr = [1, 2, 3, 4, 5]
-	// 	assert.strictEqual(arrayTasks.sum(arr), 15)
-	// })
+	it('should calculate the sum of all values in an array', function () {
+		const arr = [1, 2, 3, 4, 5]
+		assert.strictEqual(arrayTasks.sum(arr), 15)
+	})
   //
 	// xit('should remove all instances of a value from an array, returning a new array', function () {
 	// 	const arr = [1, 2, 3, 1, 4, 5, 1]

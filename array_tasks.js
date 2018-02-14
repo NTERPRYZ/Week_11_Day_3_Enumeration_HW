@@ -9,13 +9,15 @@ const arrayTasks = {
     return arr;
 	},
 
-	// square: function (arr) {
+	square: function (arr) {
+    return arr.map(function(number){
+      return number * number
+    });
+	},
 
-	// },
+	sum: function (arr) {
 
-	// sum: function (arr) {
-
-	// },
+	},
 
 	// removeAndClone: function (arr, valueToRemove) {
 
