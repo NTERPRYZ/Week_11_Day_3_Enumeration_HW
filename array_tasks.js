@@ -21,9 +21,11 @@ const arrayTasks = {
     });
 	},
 
-	// removeAndClone: function (arr, valueToRemove) {
-
-	// },
+  removeAndClone: function (arr, valueToRemove) {
+  		return arr.filter(function(i){
+        return i !== valueToRemove
+      });
+  	},
 
 	// findIndexesOf: function (arr, itemToFind) {
 
@@ -35,10 +37,14 @@ const arrayTasks = {
 
 	// ----------- EXTENSION ------------
 
-	// findDuplicates: function (arr) {
-
-	// },
-
+  // findDuplicates: function (arr) {
+  //   let clonedNumbers = [];
+  //   arr.forEach(function(number) {
+  //       if((arr.indexOf(number) !== arr.lastIndexOf(number) && !clonedNumbers.includes(number))){
+  //         clonedNumbers.push(number);
+  //     }
+  //       return clonedNumbers;
+  //   });
 }
 
 module.exports = arrayTasks
