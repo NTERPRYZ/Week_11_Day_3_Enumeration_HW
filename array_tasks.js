@@ -52,15 +52,18 @@ const arrayTasks = {
 
 	// ----------- EXTENSION ------------
 
-  // findDuplicates: function (arr) {
-  //   let clonedNumbers = [];
-  //   arr.forEach(function(number) {
-  //       if((arr.indexOf(number) !== arr.lastIndexOf(number) && !clonedNumbers.includes(number))){
-  //         clonedNumbers.push(number);
-  //     }
-  //       return clonedNumbers;
-  //   });
-  // }
+  findDuplicates: function (arr) {
+    let clonedNumbers = [];
+    arr.forEach(function(number, index) {
+        if(arr.indexOf(number, index + 1) > -1) {
+          if(clonedNumbers.indexOf(number) === -1) {
+              clonedNumbers.push(number)
+          }
+        }
+    });
+    return clonedNumbers;
+  }
+
 }
 
 module.exports = arrayTasks
