@@ -11,7 +11,7 @@ const arrayTasks = {
 
 	square: function (arr) {
     return arr.map(function(number){
-      return number * number
+      return number ** 2;
     });
 	},
 
